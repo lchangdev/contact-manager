@@ -1,0 +1,9 @@
+<h1>Contacts</h1>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <a href="<%= url("/contacts/#{contact.id}") %>">
+      <li><%= contact.name %></li>
+    </a>
+  <% end %>
+</ul>
